@@ -1,0 +1,192 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .mainHeading{
+    margin-top:100px;
+    font-size: 40px;
+    font-family: "CustomFont";
+  } 
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  .sectionsRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .box {
+    flex: 1;
+    padding: 40px;
+    border-radius: 10px;
+    background: #fdf0f0;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    text-align: center;
+    min-width: 350px;
+    max-width: 100%;
+  }
+  
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "CustomFont", Arial, sans-serif;
+  }
+  
+  
+  /* Inputs */
+  .inputBox {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  
+  /* Buttons */
+  .voteButton, .themeButton {
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 3px 3px black;
+  }
+  
+  .voteButton {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+  }
+  
+  
+  .voteButton:active {
+    transform: scale(0.95);
+  }
+  
+  
+  /* Theme buttons */
+  .themeButton {
+    background-color: #FFF2CC;
+    color: black;
+    width: 120px;
+  }
+  
+  
+  .themeButton:hover {
+    background-color: #ddd;
+  }
+  
+  
+  .themeButton:active {
+    transform: scale(0.95);
+    background-color: #E6E0B2;
+  }
+  
+  
+  /* Theme buttons container */
+  .themeButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  
+  /* Theme button container */
+  .themeButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  
+  /* Theme votes counter */
+  .themeVotes {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  
+  /* Suggestions List */
+  .suggestionList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  .suggestionItem {
+    background: white;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .sections-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .box {
+      width: 90%;
+    }
+  }
+  
+  
+  /* Previous Events Section */
+  .previous-events {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  
+  .previous-events h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-family: "CustomFont", Arial, sans-serif;
+  }
+  
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  .event-list li {
+    background: white;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,140 @@
+/* General Body Styling */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Text Section */
+  .mainText {
+    padding: 120px 0;
+    text-align: center;
+    width: 100vw;
+    height: 320px;
+    position: relative;
+    color: rgb(0, 0, 0);
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .supp {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    background-color: #6a28d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #5320a8;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .featureTitle {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box {
+    background: #fcf2ef;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    text-align: center;
+    width: 250px;
+  }
+  
+  /* Reviews Section */
+  .reviews {
+    padding: 50px 20px;
+  }
+  
+  .reviewTitle {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .reviewsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .reviewBox {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reviewLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .reviewImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .reviewText {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Scroll Reveal Animation */
+  .scrollReveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
