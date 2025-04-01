@@ -1,0 +1,141 @@
+body, html {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+.header {
+  background: #000000;
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* Ensures it stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 0.5px solid white;
+  font-family: "CustomFont";
+  height: auto; /* Ensures it takes only necessary height */
+}
+
+.logo img {
+  height: 30px;
+  padding-left: 100px;
+}
+
+nav {
+  margin-left: auto;
+  padding-right: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 80px !important;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Push content down so it's not hidden behind the fixed header */
+.body {
+  padding-top: 70px; /* Adjust based on header height */
+}
+
+.navItem a,
+.dropdownTrigger > .navLink {
+  color: white; 
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.navItem a::after,
+.dropdownTrigger > .navLink::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navItem a:hover::after,
+.dropdownTrigger:hover > .navLink::after {
+  width: 100%;
+}
+
+.dropdownMenu {
+  margin-top: 7px;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown directly below the parent */
+  left: 0; /* Align the dropdown with the left edge of the parent */
+  background: white;
+  min-width: 230px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 4px; /* Rounds the corners */
+  border: 3px solid #000000; /* Adds a light gray border */
+  padding: 5px 0;
+  z-index: 1000;
+  list-style: none;
+}
+
+.dropdownTrigger:hover .dropdownMenu {
+  display: block; /* Show the dropdown menu on hover */
+}
+
+.dropdownItem {
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: black;
+}
+
+.dropdownLink {
+  color: black !important;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px;
+  transition: background 0.2s;
+  margin: 0;
+}
+
+.dropdownLink:hover {
+  background: #f0f0f0; /* Light gray background on hover */
+}

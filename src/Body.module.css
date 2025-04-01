@@ -1,0 +1,199 @@
+/* General Body Styling */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Text Section */
+.mainText {
+    position: relative;
+    padding: 120px 0;
+    text-align: center;
+    width: 100vw;
+    height: 320px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+/* Background Image */
+.mainText::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Title & Subtitle */
+.title {
+    font-family: CustomFont;
+    font-size: 60px;
+    margin-top: 70px;
+}
+
+.supp {
+    margin-top: -15px;
+    margin-bottom: 45px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+    padding-bottom: 50px;
+}
+
+/* Features Title */
+.featureTitle {
+    font-family: CustomFont;
+    font-size: 39px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+/* Feature Boxes */
+.box {
+    background: #FCF2EF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 6px 6px black;
+    text-align: center;
+    width: 450px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    font-family: "CustomFont";
+}
+
+.box p {
+    font-size: 1.1rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+/* Reviews Section */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.reviewTitle {
+    font-family: "CustomFont";
+    font-size: 2.7em;
+}
+
+/* Reviews Container */
+.reviewsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+    padding: 50px;
+}
+
+/* Review Box */
+.reviewBox {
+    background: #FCF2EF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 6px 6px black;
+    text-align: left;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Profile Picture and Name */
+.reviewLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.reviewImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.reviewBox h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    font-family: "CustomFont";
+}
+
+/* Review Text */
+.reviewText {
+    font-size: 1rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: "CustomFont";
+    padding: 15px 0;
+    font-size: 16px;
+    margin-top: auto;
+}

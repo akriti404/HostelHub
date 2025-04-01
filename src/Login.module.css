@@ -1,0 +1,136 @@
+.loginPage {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.loginLeft {
+  flex: 2.3;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.loginLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginRight {
+  flex: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBox {
+  font-family: "CustomFont";
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  height: auto;
+  width: fit-content; /* Makes the border fit the content */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px; /* Adjust spacing below */
+  position: relative;
+}
+
+.loginInput {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.buttonContainer {
+  margin-top: 20px; /* Add spacing above the button container */
+  text-align: center; /* Center the button horizontally */
+}
+
+.loginButton {
+  margin: 10px auto; /* Center the button and add spacing above */
+  display: block; /* Ensure the button takes up its own line */
+  width: 100px;
+  padding: 10px;
+  border: 2px solid rgb(146, 103, 216);
+  border-radius: 20px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 4px 4px rgb(146, 103, 216);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.loginButton:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px rgb(146, 103, 216);
+}
+
+/* WHITE LINE AFTER BUTTON */
+.loginDivider {
+  width: 60%; /* Adjust width as needed */
+  height: 0.5px;
+  background-color: white;
+  margin: 20px auto; /* Centers the border */
+  margin-top: 30px;
+}
+
+/* PARAGRAPH TEXT */
+.loginBox p {
+  font-family: Arial, sans-serif;
+  margin-top: 1px; /* Adds space after the white line */
+  font-size: 10px;
+  color: white;
+}
+
+.adminLogin {
+  font-size: 15px !important;
+  color: rgb(146, 103, 216) !important;
+  margin: 25px;
+}
+
+.adminLogin a {
+  color: rgb(146, 103, 216);
+  font-family: Arial, sans-serif;
+  text-decoration: none; /* Removes default underline */
+  position: relative; /* Allows absolute positioning of the underline */
+  font-size: 15px;
+}
+
+/* Hover Effect */
+.adminLogin a::after {
+  content: "";
+  display: block;
+  width: 0%; /* Start with no width */
+  height: 2px; /* Thickness of the underline */
+  background-color: rgb(146, 103, 216); /* Same color as text */
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust as needed */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* On Hover, Expand Underline */
+.adminLogin a:hover::after {
+  width: 100%; /* Expands underline on hover */
+}

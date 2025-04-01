@@ -1,0 +1,225 @@
+.mainHeading {
+  font-family: "CustomFont";
+  font-size: 30px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sectionsRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  padding: 40px;
+  border-radius: 10px;
+  background: #fdf0f0;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  text-align: center;
+  min-width: 350px;
+  max-width: 100%;
+}
+
+.texth2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "CustomFont", Arial, sans-serif;
+}
+
+.inputBox {
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.submitButton {
+  font-size: 14px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 3px 3px black;
+  background: #5a67d8;
+  color: white;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  background: #434190;
+}
+
+.submitButton:active {
+  transform: scale(0.95);
+  box-shadow: 1px 1px black;
+  background: #3333cc;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  background: gray;
+}
+
+.commonDatePicker {
+  margin: 0 auto 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  font-family: "CustomFont";
+}
+
+.commonDatePicker label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.commonDatePicker label::after {
+  content: " *";
+  color: red;
+}
+
+.datePickerInput {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.reactDatepicker {
+  font-family: Arial, sans-serif;
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+}
+
+.react-datepicker__header {
+  background-color: #fdf0f0;
+  border-bottom: 2px solid black;
+}
+
+.react-datepicker__day--selected {
+  background-color: #5a67d8;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #5a67d8;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f0f0f0;
+}
+
+/* Request Lists */
+.requestList {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.requestList h3 {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-family: "CustomFont", Arial, sans-serif;
+}
+
+.requestItem {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.requestInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.requestText {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.equipmentType {
+  font-weight: bold;
+  color: #5a67d8;
+  margin-right: 5px;
+}
+
+.requestDate {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.scheduledDate {
+  display: block;
+  font-size: 14px;
+  color: #2d3748;
+  margin: 8px 0;
+  padding: 6px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #5a67d8;
+}
+
+.requestStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-top: 8px;
+  border-top: 1px dashed #ddd;
+}
+
+.statusButton {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.statusButton.resolved {
+  background-color: #48bb78;
+  color: white;
+}
+
+.statusButton.resolved:hover {
+  background-color: #38a169;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sectionsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 90%;
+  }
+  .commonDatePicker {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
