@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Community.module.css";
-import Cursor from "./Cursor";
-import Header from "./Header";
 import styles1 from "./Button.module.css";
+import Header from "./Header";
+import Cursor from "./Cursor";
 
 function Community() {
   const [movieSuggestions, setMovieSuggestions] = useState([]);
@@ -59,6 +59,7 @@ function Community() {
   return (
     <div>
       <Header />
+      <Cursor />
       <div className={styles.mainContainer}>
         <h1 className={styles.mainHeading}>Community Engagement</h1>
         <div className={styles.sectionsRow}>
@@ -125,7 +126,9 @@ function Community() {
               value={eventDescription}
               onChange={(e) => setEventDescription(e.target.value)}
             />
-            <div><button className={styles1.btn} onClick={handleEventSubmit}>Submit</button></div>
+            <div>
+              <button className={styles1.btn} onClick={handleEventSubmit}>Submit</button>
+            </div>
             {eventSuggestions.length > 0 && (
               <div className={styles.previousEvents}>
                 <h3>Previously Suggested Events</h3>
